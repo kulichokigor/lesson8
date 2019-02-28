@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework8</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="http://nickblack.pro/send.php" method="post">
+		
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<div class="rows"><label for="id-fname">Имя</label><input type="text" name="fname" id="id-fname" required></div>
+			<div class="rows"><label for="id-sname">Фамилия</label><input type="text" name="sname" id="id-sname"></div>
+			<div class="rows"><label for="id-age">Возраст</label><input type="number" name="age" id="id-age" min="1" max="100"></div>
+			<div class="rows"><label for="id-mail">Почта</label><input type="email" name="mail" id="id-mail"></div>
+			<div class="rows"><label for="id-bday">Дата рождения</label><input type="date" name="bday" id="id-bday"></div>
+			<div class="rows"><label for="id-phone">Телефон</label><input type="tel" name="phone" id="id-phone" pattern="[0-9]{12}" placeholder="380*********" autocomplete="off" required></div>
+			<div class="rows"><label for="id-mymail">Email получателя</label><input type="email" name="mymail" value="kulichokigor@gmail.com" id="id-mymail" required disabled></div>
+			<div class="rows"><input type="submit" value="Отослать"></div>
+
+
+		</fieldset>
+
+	</form>
+</body>
+</html>
